@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TalentHunter.site - Job Portal Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.ico">
+    <meta name="theme-color" content="#0d6efd">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "TalentHunter",
+      "url": "https://talenthunter.site/",
+      "logo": "https://talenthunter.site/img/favicon.ico"
+    }
+    </script>
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <div id="languageBanner" class="language-banner">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
+                    <div class="language-banner-text">Translate this site:</div>
+                    <div class="language-banner-actions mt-2 mt-md-0">
+                        <button type="button" class="btn btn-sm btn-primary me-2" data-lang="en">English</button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" data-lang="es">Español</button>
+                        <button type="button" class="btn btn-close-language ms-md-3" data-close-language-banner aria-label="Close language selector">&times;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary">TalentHunter</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="job-list.html" class="dropdown-item">Job List</a>
+                            <a href="job-detail.html" class="dropdown-item">Job Detail</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Category</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Perfect Job That You Deserved</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">TalentHunter.site connects you with verified U.S. employers and career opportunities that match your skills, goals, and lifestyle.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find The Best Startup Job That Fit You</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Explore career paths at fast-growing companies and receive expert guidance to land the role that advances your future.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input id="search-keyword" type="text" class="form-control border-0" placeholder="Keyword" />
+                            </div>
+                            <div class="col-md-4">
+                                <select id="search-category" class="form-select border-0">
+                                    <option selected>Category</option>
+                                    <option value="marketing">Marketing</option>
+                                    <option value="customer-service">Customer Service</option>
+                                    <option value="hr">Human Resource</option>
+                                    <option value="project-management">Project Management</option>
+                                    <option value="business-dev">Business Development</option>
+                                    <option value="sales">Sales & Communication</option>
+                                    <option value="education">Teaching & Education</option>
+                                    <option value="design">Design & Creative</option>
+                                    <option value="software">Software Development</option>
+                                    <option value="data-science">Data Science</option>
+                                    <option value="finance">Finance & Accounting</option>
+                                    <option value="healthcare">Healthcare & Medical</option>
+                                    <option value="engineering">Engineering</option>
+                                    <option value="legal">Legal</option>
+                                    <option value="media">Media & Entertainment</option>
+                                    <option value="retail">Retail & Customer Support</option>
+                                    <option value="logistics">Logistics & Supply Chain</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="construction">Construction</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="tourism">Tourism & Hospitality</option>
+                                    <option value="real-estate">Real Estate</option>
+                                    <option value="telecommunications">Telecommunications</option>
+                                    <option value="energy">Energy & Utilities</option>
+                                    <option value="automotive">Automotive</option>
+                                    <option value="fashion">Fashion & Apparel</option>
+                                    <option value="food">Food & Beverage</option>
+                                    <option value="travel">Travel & Transportation</option>
+                                    <option value="nonprofit">Non-Profit</option>
+                                    <option value="government">Government</option>
+                                    <option value="security">Security</option>
+                                    <option value="environmental">Environmental</option>
+                                    <option value="research">Research & Development</option>
+                                    <option value="consulting">Consulting</option>
+                                    <option value="training">Training & Development</option>
+                                    <option value="quality">Quality Assurance</option>
+                                    <option value="operations">Operations</option>
+                                    <option value="admin">Administration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select id="search-location" class="form-select border-0">
+                                    <option selected>Location</option>
+                                    <option value="alabama">Alabama</option>
+                                    <option value="alaska">Alaska</option>
+                                    <option value="arizona">Arizona</option>
+                                    <option value="arkansas">Arkansas</option>
+                                    <option value="california">California</option>
+                                    <option value="colorado">Colorado</option>
+                                    <option value="connecticut">Connecticut</option>
+                                    <option value="delaware">Delaware</option>
+                                    <option value="florida">Florida</option>
+                                    <option value="georgia">Georgia</option>
+                                    <option value="hawaii">Hawaii</option>
+                                    <option value="idaho">Idaho</option>
+                                    <option value="illinois">Illinois</option>
+                                    <option value="indiana">Indiana</option>
+                                    <option value="iowa">Iowa</option>
+                                    <option value="kansas">Kansas</option>
+                                    <option value="kentucky">Kentucky</option>
+                                    <option value="louisiana">Louisiana</option>
+                                    <option value="maine">Maine</option>
+                                    <option value="maryland">Maryland</option>
+                                    <option value="massachusetts">Massachusetts</option>
+                                    <option value="michigan">Michigan</option>
+                                    <option value="minnesota">Minnesota</option>
+                                    <option value="mississippi">Mississippi</option>
+                                    <option value="missouri">Missouri</option>
+                                    <option value="montana">Montana</option>
+                                    <option value="nebraska">Nebraska</option>
+                                    <option value="nevada">Nevada</option>
+                                    <option value="newhampshire">New Hampshire</option>
+                                    <option value="newjersey">New Jersey</option>
+                                    <option value="newmexico">New Mexico</option>
+                                    <option value="newyork">New York</option>
+                                    <option value="northcarolina">North Carolina</option>
+                                    <option value="northdakota">North Dakota</option>
+                                    <option value="ohio">Ohio</option>
+                                    <option value="oklahoma">Oklahoma</option>
+                                    <option value="oregon">Oregon</option>
+                                    <option value="pennsylvania">Pennsylvania</option>
+                                    <option value="rhodeisland">Rhode Island</option>
+                                    <option value="southcarolina">South Carolina</option>
+                                    <option value="southdakota">South Dakota</option>
+                                    <option value="tennessee">Tennessee</option>
+                                    <option value="texas">Texas</option>
+                                    <option value="utah">Utah</option>
+                                    <option value="vermont">Vermont</option>
+                                    <option value="virginia">Virginia</option>
+                                    <option value="washington">Washington</option>
+                                    <option value="westvirginia">West Virginia</option>
+                                    <option value="wisconsin">Wisconsin</option>
+                                    <option value="wyoming">Wyoming</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button id="search-button" type="button" class="btn btn-dark border-0 w-100">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
+                            <h6 class="mb-3">Marketing</h6>
+                            <p class="mb-0">87 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-headset text-primary mb-4"></i>
+                            <h6 class="mb-3">Customer Service</h6>
+                            <p class="mb-0">54 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                            <h6 class="mb-3">Human Resource</h6>
+                            <p class="mb-0">42 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-tasks text-primary mb-4"></i>
+                            <h6 class="mb-3">Project Management</h6>
+                            <p class="mb-0">68 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
+                            <h6 class="mb-3">Business Development</h6>
+                            <p class="mb-0">72 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-hands-helping text-primary mb-4"></i>
+                            <h6 class="mb-3">Sales & Communication</h6>
+                            <p class="mb-0">95 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-book-reader text-primary mb-4"></i>
+                            <h6 class="mb-3">Teaching & Education</h6>
+                            <p class="mb-0">38 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-drafting-compass text-primary mb-4"></i>
+                            <h6 class="mb-3">Design & Creative</h6>
+                            <p class="mb-0">61 Vacancies</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="moreCategoriesIndex" class="row g-4 d-none">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-code text-primary mb-4"></i>
+                            <h6 class="mb-3">Software Development</h6>
+                            <p class="mb-0">125 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-database text-primary mb-4"></i>
+                            <h6 class="mb-3">Data Science</h6>
+                            <p class="mb-0">46 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-calculator text-primary mb-4"></i>
+                            <h6 class="mb-3">Finance & Accounting</h6>
+                            <p class="mb-0">58 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-hospital text-primary mb-4"></i>
+                            <h6 class="mb-3">Healthcare & Medical</h6>
+                            <p class="mb-0">104 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-cogs text-primary mb-4"></i>
+                            <h6 class="mb-3">Engineering</h6>
+                            <p class="mb-0">92 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-gavel text-primary mb-4"></i>
+                            <h6 class="mb-3">Legal</h6>
+                            <p class="mb-0">31 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-film text-primary mb-4"></i>
+                            <h6 class="mb-3">Media & Entertainment</h6>
+                            <p class="mb-0">47 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-shopping-cart text-primary mb-4"></i>
+                            <h6 class="mb-3">Retail & Sales</h6>
+                            <p class="mb-0">118 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-truck text-primary mb-4"></i>
+                            <h6 class="mb-3">Logistics & Supply Chain</h6>
+                            <p class="mb-0">76 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-industry text-primary mb-4"></i>
+                            <h6 class="mb-3">Manufacturing</h6>
+                            <p class="mb-0">63 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-hammer text-primary mb-4"></i>
+                            <h6 class="mb-3">Construction</h6>
+                            <p class="mb-0">89 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-leaf text-primary mb-4"></i>
+                            <h6 class="mb-3">Agriculture</h6>
+                            <p class="mb-0">25 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h6 class="mb-3">Tourism & Hospitality</h6>
+                            <p class="mb-0">82 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h6 class="mb-3">Real Estate</h6>
+                            <p class="mb-0">55 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-wifi text-primary mb-4"></i>
+                            <h6 class="mb-3">Telecommunications</h6>
+                            <p class="mb-0">48 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-bolt text-primary mb-4"></i>
+                            <h6 class="mb-3">Energy & Utilities</h6>
+                            <p class="mb-0">39 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-car text-primary mb-4"></i>
+                            <h6 class="mb-3">Automotive</h6>
+                            <p class="mb-0">71 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-tshirt text-primary mb-4"></i>
+                            <h6 class="mb-3">Fashion & Apparel</h6>
+                            <p class="mb-0">44 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                            <h6 class="mb-3">Food & Beverage</h6>
+                            <p class="mb-0">102 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-plane text-primary mb-4"></i>
+                            <h6 class="mb-3">Travel & Transportation</h6>
+                            <p class="mb-0">59 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-heart text-primary mb-4"></i>
+                            <h6 class="mb-3">Non-Profit & NGO</h6>
+                            <p class="mb-0">28 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-university text-primary mb-4"></i>
+                            <h6 class="mb-3">Government & Public</h6>
+                            <p class="mb-0">36 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-shield-alt text-primary mb-4"></i>
+                            <h6 class="mb-3">Security & Defense</h6>
+                            <p class="mb-0">43 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-tree text-primary mb-4"></i>
+                            <h6 class="mb-3">Environmental</h6>
+                            <p class="mb-0">22 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-flask text-primary mb-4"></i>
+                            <h6 class="mb-3">Research & Development</h6>
+                            <p class="mb-0">35 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-brain text-primary mb-4"></i>
+                            <h6 class="mb-3">Consulting</h6>
+                            <p class="mb-0">67 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h6 class="mb-3">Training & Development</h6>
+                            <p class="mb-0">41 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-check-circle text-primary mb-4"></i>
+                            <h6 class="mb-3">Quality Assurance</h6>
+                            <p class="mb-0">56 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h6 class="mb-3">Operations</h6>
+                            <p class="mb-0">79 Vacancies</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="">
+                            <i class="fa fa-3x fa-file-alt text-primary mb-4"></i>
+                            <h6 class="mb-3">Administration</h6>
+                            <p class="mb-0">33 Vacancies</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button id="viewMoreCategoriesIndexBtn" class="btn btn-primary py-3 px-5">View More Categories</button>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row g-0 about-bg rounded overflow-hidden">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-100" src="img/about-1.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid" src="img/about-2.jpg" style="width: 85%; margin-top: 15%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid" src="img/about-3.jpg" style="width: 85%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-100" src="img/about-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="mb-4">We Help To Get The Best Job And Find A Talent</h1>
+                        <p class="mb-4">TalentHunter makes it easy to connect with qualified employers, discover the best openings, and apply with confidence. We match your experience to in-demand roles and support your career growth every step of the way.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Trusted U.S. employers and verified full-time roles</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Personalized job guidance for every applicant</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Fast application support so you can start sooner</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="about.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Jobs Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <h6 class="mt-n1 mb-0">Featured</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <h6 class="mt-n1 mb-0">Full Time</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <h6 class="mt-n1 mb-0">Part Time</h6>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active"></div>
+                        <div id="tab-2" class="tab-pane fade show p-0"></div>
+                        <div id="tab-3" class="tab-pane fade show p-0"></div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a class="btn btn-primary py-3 px-5" href="job-list.html">Browse More Jobs</a>
+                </div>
+            </div>
+        </div>
+        <!-- Jobs End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h1 class="text-center mb-5">Our Clients Say!!!</h1>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>TalentHunter delivered top candidates fast. Their team was responsive, professional, and results-driven.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Rina Queen</h5>
+                                <small>CEO, New York</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Excellent service with strong US talent matches. I would recommend TalentHunter to any hiring manager.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Dany Williams</h5>
+                                <small>Marketing Director, California</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Great experience hiring remote and local staff across multiple US states. Fast, reliable, and very helpful.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Michael Carter</h5>
+                                <small>Operations Lead, Texas</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>TalentHunter helped us fill hard-to-find roles quickly. The process was simple and the candidates were excellent.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Emily Jackson</h5>
+                                <small>HR Manager, Florida</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="privacy.html">Privacy Policy</a>
+                        <a class="btn btn-link text-white-50" href="terms.html">Terms & Condition</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Contact</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>200 5th Ave, New York, NY 10010</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 917 555 0147</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@talenthunter.site</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">TalentHunter.site</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="cookies.html">Cookies</a>
+                                <a href="help.html">Help</a>
+                                <a href="faqs.html">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Job Data Javascript -->
+    <script src="js/jobs-data.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('viewMoreCategoriesIndexBtn');
+            var more = document.getElementById('moreCategoriesIndex');
+            if (btn && more) {
+                btn.addEventListener('click', function() {
+                    var expanded = !more.classList.contains('d-none');
+                    more.classList.toggle('d-none');
+                    btn.textContent = expanded ? 'View More Categories' : 'Show Less Categories';
+                    if (!expanded) {
+                        more.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
